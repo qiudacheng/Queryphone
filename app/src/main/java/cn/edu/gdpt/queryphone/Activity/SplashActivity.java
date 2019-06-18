@@ -52,7 +52,7 @@ public class SplashActivity extends AppCompatActivity {
         mBtn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SplashActivity.this, TelephoneEnquiryActivity.class);
+                Intent intent=new Intent(SplashActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

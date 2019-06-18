@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/me"
+            android:icon="@drawable/icon_me"
+            android:title="个人中心"/>
+        <item
+            android:id="@+id/tixing"
+            android:icon="@drawable/icon_tixing"
+            android:title="我的提醒"/>
+        <item
+            android:id="@+id/favorite"
+            android:icon="@drawable/icon_favourite"
+            android:title="我的收藏"/>
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/icon_setting"
+            android:title="软件设置"/>
+        <item
+            android:id="@+id/leave"
+            android:icon="@drawable/icon_leave"
+            android:title="退出登录"/>
+    </group>
+
+</menu>

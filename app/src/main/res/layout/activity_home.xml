@@ -4,22 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawerlayout"
     tools:context=".Activity.TelephoneEnquiryActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@color/button_background"
-            android:gravity="right">
+            android:background="@color/button_background">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+            <ImageView
+                android:id="@+id/home_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_menu"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:background="@drawable/popu"
+                android:src="@drawable/icon_popu"
+                android:layout_marginRight="10dp"
 
                  />
         </LinearLayout>
@@ -50,35 +65,44 @@
                         android:textSize="16sp"/>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/icon_phone"/>
+                        android:src="@drawable/icon_phone" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:gravity="center"
                         android:text="手机号码查凶吉"
-                        android:textSize="16sp"/>
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
             </LinearLayout>
 
-    </RelativeLayout>
-    <TextView
-        android:id="@+id/drawerlayout_side_tv"
-        android:layout_width="270dp"
+    </LinearLayout>
+    <android.support.design.widget.NavigationView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="left"
-        android:background="#FFFFFF"
-        android:text="侧滑菜单"/>
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/head_home"
+        app:itemIconTint="@color/button_background"
+        app:menu="@menu/menu_home">
+    </android.support.design.widget.NavigationView>
+
+
+
 
 </android.support.v4.widget.DrawerLayout>
