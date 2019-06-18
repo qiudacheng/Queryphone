@@ -20,7 +20,7 @@ import cn.edu.gdpt.queryphone.DepthPageTransformer;
 import cn.edu.gdpt.queryphone.R;
 import cn.edu.gdpt.queryphone.Adatper.ViewPagerAdatper;
 
-public class MainActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     private ViewPager mIn_vp;
     private LinearLayout mIn_ll;
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,FirstActivity.class);
+                Intent intent=new Intent(SplashActivity.this, TelephoneEnquiryActivity.class);
                 startActivity(intent);
             }
         });
@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         mViewList = new ArrayList<View>();
-        LayoutInflater lf = getLayoutInflater().from(MainActivity.this);
+        LayoutInflater lf = getLayoutInflater().from(SplashActivity.this);
         View view1 = lf.inflate(R.layout.we_indicator1, null);
         View view2 = lf.inflate(R.layout.we_indicator2, null);
         View view3 = lf.inflate(R.layout.we_indicator3, null);
