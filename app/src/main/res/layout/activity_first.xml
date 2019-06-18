@@ -54,23 +54,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_weight="1"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_phone2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="手机号码归属地查询"
+                    android:textSize="16sp"/>
 
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_weight="1"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_phone"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="手机号码查凶吉"
+                    android:textSize="16sp"/>
 
             </LinearLayout>
 
