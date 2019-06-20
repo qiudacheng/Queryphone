@@ -16,7 +16,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private NavigationView nav;
     private DrawerLayout drawerlayout;
-    ImageView menu;
+    ImageView menu,user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,5 +47,6 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             }
         });
+
     }
 }
