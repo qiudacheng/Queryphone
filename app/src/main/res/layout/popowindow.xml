@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
     android:background="#ffffff"
-   >
+    >
     <LinearLayout
         android:id="@+id/ll_chat"
         android:layout_width="match_parent"
@@ -18,14 +17,15 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-             />
+            android:src="@drawable/icon_git"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginLeft="5dp"
             android:gravity="left"
-            android:text="添加好友"
+            android:text="分享"
             android:textSize="16sp" />
     </LinearLayout>
     <LinearLayout
@@ -39,14 +39,15 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-           />
+            android:src="@drawable/icon_sao"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginLeft="5dp"
             android:gravity="center_vertical"
-            android:text="听歌识曲"
+            android:text="扫一扫"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -61,6 +62,7 @@
         <ImageButton
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:src="@drawable/icon_set"
             />
 
         <TextView
@@ -68,7 +70,7 @@
             android:layout_height="20dp"
             android:layout_marginLeft="5dp"
             android:gravity="center_vertical"
-            android:text="分享给朋友"
+            android:text="设置"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -83,14 +85,15 @@
         <ImageButton
             android:layout_width="20dp"
             android:layout_height="20dp"
-         />
+            android:src="@drawable/icon_help"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginLeft="5dp"
             android:gravity="left"
-            android:text="设置"
+            android:text="帮助与反馈"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -105,6 +108,7 @@
         <ImageButton
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:src="@drawable/icon_leave2"
             />
 
         <TextView
@@ -112,7 +116,7 @@
             android:layout_height="20dp"
             android:layout_marginLeft="5dp"
             android:gravity="left"
-            android:text="帮助与反馈"
+            android:text="退出"
             android:textSize="16sp" />
     </LinearLayout>
 </LinearLayout>
