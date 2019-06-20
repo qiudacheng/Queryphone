@@ -1,5 +1,6 @@
 package cn.edu.gdpt.queryphone.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -8,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import cn.edu.gdpt.queryphone.R;
@@ -16,12 +18,14 @@ public class HomeActivity extends AppCompatActivity {
 
     private NavigationView nav;
     private DrawerLayout drawerlayout;
-    ImageView menu,user;
+    ImageView menu;
+    private TextView tv_userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         initView();
     }
 
@@ -47,6 +51,11 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        Intent intent = getIntent();
+        String user = intent.getStringExtra("user");
+        tv_userName = headView.findViewById(R.id.tv_user);
+        tv_userName.setText(user);
 
     }
 }

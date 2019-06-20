@@ -30,10 +30,11 @@
                 android:layout_marginLeft="10dp"
                 />
         </LinearLayout>
-            <ImageView
+            <ImageButton
+                android:id="@+id/btn_popu"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:src="@drawable/icon_popu"
+                android:background="@drawable/icon_popu"
                 android:layout_marginRight="10dp"
 
                  />
