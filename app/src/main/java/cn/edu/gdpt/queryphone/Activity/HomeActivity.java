@@ -25,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
     private DrawerLayout drawerlayout;
     ImageView menu;
     private TextView tv_userName;
-    private ImageView img_query;
+    private ImageView img_query,img_qq;
     private ImageButton imageButton;
 
     @Override
@@ -64,6 +64,14 @@ public class HomeActivity extends AppCompatActivity {
         tv_userName = headView.findViewById(R.id.tv_user);
         tv_userName.setText(user);
         img_query=(ImageView)findViewById(R.id.img_query);
+        img_qq=(ImageView)findViewById(R.id.img_qq);
+        img_qq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(HomeActivity.this,QQInquiry.class);
+                startActivity(intent1);
+            }
+        });
         img_query.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
