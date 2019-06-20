@@ -62,11 +62,46 @@
         android:layout_height="1dp"
         android:background="#a47e7e"
         />
-    <TextView
-        android:id="@+id/tv_qq_result"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结论："
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/tv_qq_conclusion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分析："
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/tv_qq_analysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
