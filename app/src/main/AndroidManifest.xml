@@ -11,7 +11,8 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.IDCard"></activity>
+        <activity android:name=".Activity.IPSearch"></activity>
+        <activity android:name=".Activity.IDCard" />
         <activity android:name=".Activity.QQInquiry" />
         <activity android:name=".Activity.RegisterActivity" />
         <activity android:name=".Activity.LoginActivity" />

@@ -28,6 +28,7 @@ public class HomeActivity extends AppCompatActivity {
     private ImageView img_query, img_qq;
     private ImageButton imageButton;
     private ImageView img_id;
+    private ImageView img_ip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,10 +68,18 @@ public class HomeActivity extends AppCompatActivity {
         img_query = (ImageView) findViewById(R.id.img_query);
         img_qq = (ImageView) findViewById(R.id.img_qq);
         img_id = (ImageView) findViewById(R.id.img_id);
+        img_ip = (ImageView) findViewById(R.id.img_ip);
+        img_ip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3=new Intent(HomeActivity.this,IPSearch.class);
+                startActivity(intent3);
+            }
+        });
         img_id.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2=new Intent(HomeActivity.this,IDCard.class);
+                Intent intent2 = new Intent(HomeActivity.this, IDCard.class);
                 startActivity(intent2);
             }
         });
@@ -145,8 +154,6 @@ public class HomeActivity extends AppCompatActivity {
                 });
             }
         });
-
-
 
 
     }
