@@ -19,7 +19,7 @@
             android:background="@color/button_background">
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 >
             <ImageView
@@ -32,7 +32,7 @@
         </LinearLayout>
             <ImageButton
                 android:id="@+id/btn_popu"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/icon_popu"
                 android:layout_marginRight="10dp"
@@ -130,7 +130,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/icon_idcard" />
+                    android:src="@drawable/icon_itent" />
 
                 <TextView
                     android:layout_width="match_parent"
